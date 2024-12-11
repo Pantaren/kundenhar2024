@@ -1,10 +1,20 @@
 
+body{
+    margin: 0;
+}
+
+:root{
+    --huvudfärg: #2196f3;
+    --sekundärfärg: #F5CD90;
+}
+
 
 #homewrap{
     width: 100%;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 200px 850px 350px;
+    background-color: #2196f3;
     grid-template-areas: 
     'hd1'
     'sc1'
@@ -61,10 +71,45 @@
 #hd1{
     grid-area: hd1;
     background-color: aqua;
+    display: grid;
+    grid-template-columns: 95%;
+    grid-template-rows: 60% 40%;
+    padding: 10px;
+    grid-template-areas: 
+    'hdh1'
+    'nv'
+    ;
+}
+
+#hdh1{
+    grid-area: hdh1;
+
+}
+
+#nv{
+    grid-area: nv;
+    background-color:#2196f3;
 }
 
 
 #ft1{
     grid-area: ft1;
     background-color: aqua;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 100%;
+    padding: 5px;
+    grid-template-areas:
+    'ftat ftimg'
+    ;
+}
+
+#ftat{
+    grid-area: ftat;
+    background-color: bisque;
+}
+
+#ftimg{
+    grid-area: ftimg;
+    background-color: #F5CD90;
 }
