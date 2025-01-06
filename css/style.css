@@ -4,8 +4,8 @@ body{
 }
 
 :root{
-    --huvudfärg: #2196f3;
-    --sekundärfärg: #F5CD90;
+    --maincolor: #2196f3;
+    --secondarycolor: #F5CD90;
 }
 
 
@@ -14,16 +14,17 @@ body{
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 200px 850px 350px;
-    background-color: #2196f3;
+    background-color: var(--maincolor);
     grid-template-areas: 
     'hd1'
-    'sc1'
+    'mn1'
     'ft1'
     ;
     gap: 10px;
 }
 
-#sectionwrap1{
+
+#mainwrap1{
     width: 100%;
     display: grid;
     grid-template-columns: 30% 30% 25%;
@@ -36,45 +37,46 @@ body{
     'img1-2 at1-3 img1-1'
     ;
     gap: 10px;
-    grid-area: sc1;
-    background-color: #2196f3;
+    grid-area: mn1;
+    background-color: var(--maincolor);
 }
 
 
 #at1-1{
     grid-area: at1-1;
-    background-color: aqua;
+    background-color: var(--secondarycolor);
 }
 
 #at1-2{
     grid-area: at1-2;
-    background-color: aqua;
+    background-color: var(--secondarycolor);
 }
 
 #at1-3{
     grid-area: at1-3;
-    background-color: aqua;
+    background-color: var(--secondarycolor);
 }
 
 #img1-1{
     grid-area: img1-1;
-    background-color: aqua;
+    background-color: var(--secondarycolor);
 }
 
 #img1-2{
     grid-area: img1-2;
-    background-color: aqua;
+    background-color: var(--secondarycolor);
 }
 
 
 
 #hd1{
     grid-area: hd1;
-    background-color: aqua;
+    background-color: var(--maincolor);
     display: grid;
     grid-template-columns: 95%;
     grid-template-rows: 60% 40%;
-    padding: 10px;
+    justify-content: center;
+    padding: 20px;
     grid-template-areas: 
     'hdh1'
     'nv'
@@ -88,17 +90,19 @@ body{
 
 #nv{
     grid-area: nv;
-    background-color:#2196f3;
+    background-color:var(--secondarycolor);
 }
 
 
 #ft1{
     grid-area: ft1;
-    background-color: aqua;
+    background-color: var(--maincolor);
     display: grid;
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 35% 60%;
     grid-template-rows: 100%;
-    padding: 5px;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
     grid-template-areas:
     'ftat ftimg'
     ;
@@ -106,10 +110,38 @@ body{
 
 #ftat{
     grid-area: ftat;
-    background-color: bisque;
+    background-color: var(--secondarycolor);
 }
 
 #ftimg{
     grid-area: ftimg;
-    background-color: #F5CD90;
+    background-color: var(--secondarycolor);
+}
+
+
+#cardwrap{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 200px 850px 350px;
+    background-color: var(--maincolor);
+    grid-template-areas: 
+    'hd1'
+    'mn2'
+    'ft1'
+    ;
+    gap: 10px;
+}
+
+#mainwrap2 {
+    grid-area: mn2;
+    display: flex;
+
+
+}
+
+.card{
+    flex-basis: 25%;
+
+
 }
