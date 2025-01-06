@@ -45,26 +45,31 @@ body{
 #at1-1{
     grid-area: at1-1;
     background-color: var(--secondarycolor);
+    border-radius: 5px;
 }
 
 #at1-2{
     grid-area: at1-2;
     background-color: var(--secondarycolor);
+    border-radius: 5px;
 }
 
 #at1-3{
     grid-area: at1-3;
     background-color: var(--secondarycolor);
+    border-radius: 5px;
 }
 
 #img1-1{
     grid-area: img1-1;
     background-color: var(--secondarycolor);
+    border-radius: 5px;
 }
 
 #img1-2{
     grid-area: img1-2;
     background-color: var(--secondarycolor);
+    border-radius: 5px;
 }
 
 
@@ -91,6 +96,9 @@ body{
 #nv{
     grid-area: nv;
     background-color:var(--secondarycolor);
+    padding: 10px;
+    align-content: center;
+    border-radius: 5px;
 }
 
 
@@ -111,13 +119,21 @@ body{
 #ftat{
     grid-area: ftat;
     background-color: var(--secondarycolor);
+    border-radius: 5px;
 }
 
 #ftimg{
     grid-area: ftimg;
     background-color: var(--secondarycolor);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;     
+    
 }
 
+#ftimg:hover{
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+
+}
 
 #cardwrap{
     width: 100%;
@@ -136,12 +152,105 @@ body{
 #mainwrap2 {
     grid-area: mn2;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
 
 
 }
 
 .card{
-    flex-basis: 25%;
+    flex: 0 1 21%;
+    background-color: var(--secondarycolor);
+    height: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 200px 200px;
+    
+    grid-template-areas: 
+    'cimg'
+    'cat'
+    ;
 
 
+
+}
+
+.card:hover {
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+    padding: 5px;
+  }
+
+.cardimg{
+    grid-area: cimg;
+    background-color: var(--maincolor);
+    justify-self: center;
+    align-self: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+
+.cardat{
+    grid-area: cat;
+    justify-self: center;
+    align-self: start;
+}
+
+
+
+#weeklywrap{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 200px 850px 350px;
+    background-color: var(--maincolor);
+    grid-template-areas: 
+    'hd1'
+    'mn3'
+    'ft1'
+    ;
+    gap: 10px;
+}
+#mainwrap3{
+    grid-area: mn3;
+    display: grid;
+    grid-template-columns: 65% 25%;
+    grid-template-rows: 400px 400px;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: 
+    'wimg1 was1'
+    'wimg2 was2'
+    ;
+    gap: 10px;
+
+}
+
+#weeklyimg1 {
+    grid-area: wimg1;
+    background-color: var(--secondarycolor);
+    border-radius: 5px;
+}
+
+#weeklyimg2 {
+    grid-area: wimg2;
+    background-color: var(--secondarycolor);
+    border-radius: 5px;
+}
+
+#weeklyas1 {
+    grid-area: was1;
+    background-color: var(--secondarycolor);
+    border-radius: 5px;
+}
+
+#weeklyas2 {
+    grid-area: was2;
+    background-color: var(--secondarycolor);
+    border-radius: 5px;
 }
