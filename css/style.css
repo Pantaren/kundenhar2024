@@ -27,7 +27,7 @@ body{
 #mainwrap1{
     width: 100%;
     display: grid;
-    grid-template-columns: 30% 30% 25%;
+    grid-template-columns: 30% 30% 30%;
     grid-template-rows: 400px 150px 250px;
     justify-content: center;
     align-content: center;
@@ -46,18 +46,21 @@ body{
     grid-area: at1-1;
     background-color: var(--secondarycolor);
     border-radius: 5px;
+    padding: 10%;
 }
 
 #at1-2{
     grid-area: at1-2;
     background-color: var(--secondarycolor);
     border-radius: 5px;
+    padding: 10%;
 }
 
 #at1-3{
     grid-area: at1-3;
     background-color: var(--secondarycolor);
     border-radius: 5px;
+    padding: 10%;
 }
 
 #img1-1{
@@ -70,6 +73,9 @@ body{
     grid-area: img1-2;
     background-color: var(--secondarycolor);
     border-radius: 5px;
+    height: 410px;
+    justify-self: center;
+    object-fit: cover ;
 }
 
 
@@ -90,6 +96,7 @@ body{
 
 #hdh1{
     grid-area: hdh1;
+    padding: 20px;
 
 }
 
@@ -106,7 +113,7 @@ body{
     grid-area: ft1;
     background-color: var(--maincolor);
     display: grid;
-    grid-template-columns: 35% 60%;
+    grid-template-columns: 45% 50%;
     grid-template-rows: 100%;
     justify-content: center;
     padding: 10px;
@@ -120,6 +127,7 @@ body{
     grid-area: ftat;
     background-color: var(--secondarycolor);
     border-radius: 5px;
+    padding: 10%;
 }
 
 #ftimg{
@@ -127,7 +135,7 @@ body{
     background-color: var(--secondarycolor);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 5px;     
-    
+    height: 100%;
 }
 
 #ftimg:hover{
